@@ -1,0 +1,13 @@
+/* Like button on posts */
+a.UFILikeLink[data-testid="fb-ufi-likelink"][role="button"]
+/* Unlike button (like button already clicked) on posts */
+,a.UFILikeLink[data-testid="fb-ufi-unlikelink"][role="button"]
+/* Like button on comments + spacing dot after it */
+,a.UFILikeLink[data-testid="ufi_comment_like_link"][role="button"]
+,a.UFILikeLink[data-testid="ufi_comment_like_link"][role="button"] + span[role="presentation"]
+/* Like button on replies + spacing dot after it */
+,a.UFILikeLink[data-testid="ufi_reply_like_link"][role="button"]
+,a.UFILikeLink[data-testid="ufi_reply_like_link"][role="button"] + span[role="presentation"]
+{
+    display: none;
+}

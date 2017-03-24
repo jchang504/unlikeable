@@ -1,0 +1,5 @@
+/* Notification flyout list notifications */
+li[data-gt*='"notif_type":"like"']
+{
+    display: none;
+}

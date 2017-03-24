@@ -1,0 +1,8 @@
+/* Reactions bar on posts */
+div.UFILikeSentence
+/* Like counter on comments + spacing dot after it */
+,a.UFICommentLikeButton
+,a.UFICommentLikeButton + span[role="presentation"]
+{
+    display: none;
+}

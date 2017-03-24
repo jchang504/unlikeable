@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unlikeable Options</title>
+    <style>
+        #options > div {
+            margin: 10px;
+        }
+        input[type="checkbox"] {
+            margin-top: -2px;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Options</h1>
+    <form id="options">
+        <div>
+            <label>
+                <input name="notifications" type="checkbox">
+                Remove reaction and like <strong>notifications</strong>
+            </label>
+        </div>
+        <div>
+            <label>
+                <input name="counters" type="checkbox">
+                Remove reaction and like <strong>counters</strong>
+            </label>
+        </div>
+        <div>
+            <label>
+                <input name="buttons" type="checkbox">
+                Remove reaction and like <strong>buttons</strong>
+            </label>
+        </div>
+        <div>
+            <input id="save" type="submit" value="Save all">
+        </div>
+    </form>
+    <script src="jquery-3.1.1.slim.min.js"></script>
+    <script src="options.js"></script>
+</body>
+</html>
