@@ -1,5 +1,8 @@
-/* Notification flyout list notifications */
+/* Matches flyout list (top right globe button), notifications page (when you
+ * click "See All" at the bottom of the flyout), and notifications beeper
+ * (ephemeral popups at bottom left) at time of new notification */
 li[data-gt*='"notif_type":"like"']
+,li[data-gt*='"notif_type":"like_tagged"']
 {
     display: none;
 }
