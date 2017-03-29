@@ -1,8 +1,11 @@
 /* Matches flyout list (top right globe button), notifications page (when you
  * click "See All" at the bottom of the flyout), and notifications beeper
- * (ephemeral popups at bottom left) at time of new notification */
+ * (ephemeral popups at bottom left) at time of new notification, for both
+ * regular old likes and reactions */
 li[data-gt*='"notif_type":"like"']
 ,li[data-gt*='"notif_type":"like_tagged"']
+,li[data-gt*='"notif_type":"feedback_reaction_generic"']
+,li[data-gt*='"notif_type":"feedback_reaction_generic_tagged"']
 {
     display: none;
 }
