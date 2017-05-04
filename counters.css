@@ -1,8 +1,18 @@
 /* Reactions bar on posts */
 div.UFILikeSentence
-/* Like counter on comments + spacing dot after it */
-,a.UFICommentLikeButton
-,a.UFICommentLikeButton + span[role="presentation"]
+/* Reactions counter on comments + spacing dot after it */
+,div.UFICommentActions div.UFICommentReactionsBling
+/* This is a little too aggressive; when there are no reactions on a comment
+ * the second last dot is to separate Reply and the timestamp, and we want to
+ * keep it. Thus the override below. */
+,div.UFICommentActions > span:nth-last-of-type(2)[role="presentation"]
 {
     display: none;
+}
+
+/* As mentioned above, this restores the dot between Reply and timestamp when
+ * there are no reactions on the comment. */
+a.UFIReplyLink + span:nth-last-of-type(2)[role="presentation"]
+{
+    display: inline;
 }
